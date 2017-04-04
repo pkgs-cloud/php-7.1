@@ -12,89 +12,91 @@ RPM packages for RHEL / CentOS 7
 
 ##### List all available packages
 
-`yum --disablerepo="*" --enablerepo="pkgs.cloud-php-7.1" list available`
+```bash
+yum --disablerepo="*" --enablerepo="pkgs.cloud-php-7.1" list available`
+```
 
 ### Current build
 
 #### PHP 7.1.3 packages
 
 ```
-php.x86_64                            7.1.3-1.el7    
-php-bcmath.x86_64                     7.1.3-1.el7    
-php-cli.x86_64                        7.1.3-1.el7    
-php-common.x86_64                     7.1.3-1.el7    
-php-dba.x86_64                        7.1.3-1.el7    
-php-dbg.x86_64                        7.1.3-1.el7    
-php-devel.x86_64                      7.1.3-1.el7    
-php-embedded.x86_64                   7.1.3-1.el7    
-php-enchant.x86_64                    7.1.3-1.el7    
-php-fpm.x86_64                        7.1.3-1.el7    
-php-gd.x86_64                         7.1.3-1.el7    
-php-gmp.x86_64                        7.1.3-1.el7    
-php-imap.x86_64                       7.1.3-1.el7    
-php-interbase.x86_64                  7.1.3-1.el7    
-php-intl.x86_64                       7.1.3-1.el7    
-php-json.x86_64                       7.1.3-1.el7    
-php-ldap.x86_64                       7.1.3-1.el7    
-php-litespeed.x86_64                  7.1.3-1.el7    
-php-mbstring.x86_64                   7.1.3-1.el7    
-php-mcrypt.x86_64                     7.1.3-1.el7    
-php-mysqlnd.x86_64                    7.1.3-1.el7    
-php-odbc.x86_64                       7.1.3-1.el7    
-php-opcache.x86_64                    7.1.3-1.el7    
-php-pdo.x86_64                        7.1.3-1.el7    
-php-pdo-dblib.x86_64                  7.1.3-1.el7    
-php-pear.noarch                       1:1.10.3-1.el7 
-php-pecl-apcu.x86_64                  5.1.8-1.el7.7.1
-php-pecl-apcu-bc.x86_64               1.0.3-6.el7.7.1
-php-pecl-apcu-devel.x86_64            5.1.8-1.el7.7.1
-php-pecl-igbinary.x86_64              2.0.1-1.el7.7.1
-php-pecl-igbinary-devel.x86_64        2.0.1-1.el7.7.1
-php-pecl-imagick.x86_64               3.4.3-1.el7.7.1
-php-pecl-imagick-devel.x86_64         3.4.3-1.el7.7.1
-php-pecl-lzf.x86_64                   1.6.5-3.el7.7.1
-php-pecl-memcached.x86_64             3.0.3-1.el7.7.1
-php-pecl-msgpack.x86_64               2.0.2-1.el7.7.1
-php-pecl-msgpack-devel.x86_64         2.0.2-1.el7.7.1
-php-pecl-redis.x86_64                 3.1.1-1.el7.7.1
-php-pecl-ssh2.x86_64                  1.0-5.el7.7.1  
-php-pgsql.x86_64                      7.1.3-1.el7    
-php-process.x86_64                    7.1.3-1.el7    
-php-pspell.x86_64                     7.1.3-1.el7    
-php-recode.x86_64                     7.1.3-1.el7    
-php-snappy.x86_64                     0.1.6-1.el7.7.1
-php-snmp.x86_64                       7.1.3-1.el7    
-php-soap.x86_64                       7.1.3-1.el7    
-php-tidy.x86_64                       7.1.3-1.el7    
-php-xml.x86_64                        7.1.3-1.el7    
-php-xmlrpc.x86_64                     7.1.3-1.el7
+php                            7.1.3    
+php-bcmath                     7.1.3    
+php-cli                        7.1.3    
+php-common                     7.1.3    
+php-dba                        7.1.3    
+php-dbg                        7.1.3    
+php-devel                      7.1.3    
+php-embedded                   7.1.3    
+php-enchant                    7.1.3    
+php-fpm                        7.1.3    
+php-gd                         7.1.3    
+php-gmp                        7.1.3    
+php-imap                       7.1.3    
+php-interbase                  7.1.3    
+php-intl                       7.1.3    
+php-json                       7.1.3    
+php-ldap                       7.1.3    
+php-litespeed                  7.1.3    
+php-mbstring                   7.1.3    
+php-mcrypt                     7.1.3    
+php-mysqlnd                    7.1.3    
+php-odbc                       7.1.3    
+php-opcache                    7.1.3    
+php-pdo                        7.1.3    
+php-pdo-dblib                  7.1.3    
+php-pear                       1.10.3 
+php-pecl-apcu                  5.1.8
+php-pecl-apcu-bc               1.0.3
+php-pecl-apcu-devel            5.1.8
+php-pecl-igbinary              2.0.1
+php-pecl-igbinary-devel        2.0.1
+php-pecl-imagick               3.4.3
+php-pecl-imagick-devel         3.4.3
+php-pecl-lzf                   1.6.5
+php-pecl-memcached             3.0.3
+php-pecl-msgpack               2.0.2
+php-pecl-msgpack-devel         2.0.2
+php-pecl-redis                 3.1.1
+php-pecl-ssh2                  1.0  
+php-pgsql                      7.1.3    
+php-process                    7.1.3    
+php-pspell                     7.1.3    
+php-recode                     7.1.3    
+php-snappy                     0.1.6
+php-snmp                       7.1.3    
+php-soap                       7.1.3    
+php-tidy                       7.1.3    
+php-xml                        7.1.3    
+php-xmlrpc                     7.1.3
 ```
 
 #### Additional packages
 
 ```
-ImageMagick.x86_64                    6.9.3.0-6.el7  
-ImageMagick-c++.x86_64                6.9.3.0-6.el7  
-ImageMagick-c++-devel.x86_64          6.9.3.0-6.el7  
-ImageMagick-devel.x86_64              6.9.3.0-6.el7  
-ImageMagick-djvu.x86_64               6.9.3.0-6.el7  
-ImageMagick-doc.x86_64                6.9.3.0-6.el7  
-ImageMagick-libs.x86_64               6.9.3.0-6.el7  
-ImageMagick-perl.x86_64               6.9.3.0-6.el7  
-apcu-panel.noarch                     5.1.8-1.el7.7.1
-gd.x86_64                             2.2.4-3.el7    
-gd-devel.x86_64                       2.2.4-3.el7    
-gd-progs.x86_64                       2.2.4-3.el7    
-jemalloc.x86_64                       3.6.0-1.el7
-jemalloc-devel.x86_64                 3.6.0-1.el7
-memcached.x86_64                      1.4.36-1.el7   
-memcached-devel.x86_64                1.4.36-1.el7   
-openssl.x86_64                        1:1.0.2k-1.el7
-openssl-libs.x86_64                   1:1.0.2k-1.el7
-openssl-devel.x86_64                  1:1.0.2k-1.el7 
-openssl-perl.x86_64                   1:1.0.2k-1.el7 
-openssl-static.x86_64                 1:1.0.2k-1.el7 
-redis.x86_64                          3.2.8-1.el7
+ImageMagick                    6.9.3.0  
+ImageMagick-c++                6.9.3.0  
+ImageMagick-c++-devel          6.9.3.0  
+ImageMagick-devel              6.9.3.0  
+ImageMagick-djvu               6.9.3.0  
+ImageMagick-doc                6.9.3.0  
+ImageMagick-libs               6.9.3.0  
+ImageMagick-perl               6.9.3.0  
+apcu-panel                     5.1.8
+gd                             2.2.4    
+gd-devel                       2.2.4    
+gd-progs                       2.2.4    
+jemalloc                       3.6.0
+jemalloc-devel                 3.6.0
+memcached                      1.4.36   
+memcached-devel                1.4.36   
+openssl                        1.0.2k
+openssl-libs                   1.0.2k
+openssl-devel                  1.0.2k 
+openssl-perl                   1.0.2k 
+openssl-static                 1.0.2k 
+redis                          3.2.8
 ```
 
 ### Help with RPM packages
